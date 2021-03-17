@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="short icon"  href="/17- 03- 2021/img/icono.ico">
+    <title>practica marzo 17</title>
+</head>
+<body>
+    <div id="izquierda">
+        <header >
+            <img src="/17- 03- 2021/img/smartFit.png" width="100px">
+        </header>
+      <h1> Create a user <br> for continuing</h1>
+        <h6>write your data for registering</h6>   
+        <div id="inputs">
+            <form action="">
+                    <input type="text" placeholder="your name" maxlength="10" required name="name" class="inPgrande" />
+                    <input type="text" placeholder="E-mail" maxlength="10" required name="email" class="inPeque" />
+                    <select name="" class="inPgrande" >
+                        <option value="-1">Type of document</option>
+                        <option value="">Tarjeta de identidad</option>
+                        <option value="">Cedula</option>
+                        <option value="">Pasaporte</option>
+                    </select>
+                    <input type="number" placeholder="Document Number" maxlength="10" class="inPeque"/>
+                    <input type="date" placeholder="dd -- yyyy" id="inPgrande">
+                    <input type="tel" placeholder="Cellphone" maxlength="10" class="inPeque"/>
+                    <input type="tel" placeholder="Telephone" maxlength="10" class="inPeque"/>
+           </form>
+        </div>
+        <table  border="1" align="center" id="tabla">
+            <tr>
+                <td>
+                    <audio src="/17- 03- 2021/Audio/Vanilla Ice - Ice Ice Baby.mp3" controls></audio>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <video id="video" src="/17- 03- 2021/Video/y2mate.com - bruno_mars_the_lazy_song_official_video_fLexgOxsZu0_720p.mp4" controls width="600"></video>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <div id="derecha">     
+    </div>
+  
+    <style>
+
+        #izquierda{
+            float: left;
+            background-image: url("/17- 03- 2021/img/fondo2.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 60%;
+            height: 1000px;
+        }
+        #derecha{
+            float:left;
+            background-image: url("/17- 03- 2021/img/color\ cafe.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            width: 40%;
+            height: 1000px;
+        }
+        #formulario{
+            display: block;
+            align-content: center;     
+        }
+
+        form input{
+            display: block;
+        }
+        .inPeque{
+            width: 100px;
+        }
+        .inPgrande{
+            width: 200px;
+        }
+        #tabla{
+            width: 300px;
+            align-content: center;
+        }
+        table tr{
+            text-align: center;
+        }
+        #video{
+            width: 50%;
+            height: 10%
+        }
+        #inputs{
+            text-align: center;
+        }
+        input{
+            height: 30px;
+        }
+        
+    </style> 
+</body>
+</html>
