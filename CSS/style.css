@@ -1,50 +1,50 @@
-body{
-    background: url(/img/fondo.png);
-    font-family: "Indie Flower";
-    
-}
-.box-master{
-display: flex;
-  justify-content: center;
-  align-items: center;
-}
 @font-face{
     font-family: "Indie Flower";
     src: url("/Fonts/Indie_Flower/IndieFlower-Regular.ttf");
 }
+body{
+    background: url(/img/fondo.png);
+    font-family: "Indie Flower";
+}
+.box-master{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container{
     width:1000px;
+}
+.fondo-buttons{
+    background-color: white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+button{
+    height: 40px;
+    width: 60px;
+    background-color: white;
+    font-family: "Indie Flower";
+    border: 0px;
+}
+button:hover{
+    background-color: rgb(196, 195, 195);
 }
 .contain-Table{
     width: 70%;
     background-color: white;
     float: left;
 }
-.Links-derecha{
-    float: left;
-    width: 26%;
-    padding: 2%;
-}
-.up-buttons{
-    padding: 0px;
-    background-color: white;
-}
-button{
-    height: 40px;
-    background-color: white;
-    font-family: "Indie Flower";
-}
-button:hover{
-    background-color: rgb(165, 165, 165);
-}
-thead{
-    border: solid 1px;
+thead,th{
+    border: solid 1px black;
     background-color:#009ddc;
+    color: white;
 }
 td{
     padding: 10px;
     border: solid 1px;
     width: 500px;
+    align-items: center;
 }
 table{
     border-collapse: collapse;
@@ -52,32 +52,43 @@ table{
     width: 100%;
 }
 img{
-    width: 200px;
+    width: 150px;
     
 }
 .imgBorde{
     padding: 20px;
     
 }
-.div1{
-    width: 46%;
+.box-Redondeado{
+    border: 7.5px double red;
+    border-radius: 100px;
+    height: 100px;
+    width: 300px;
+}
+.box1{
+    width: 42%;
     height: 75px;
     border: 15px ridge #22a738;
     float: left;
 
 }
-.div2{
+.box2{
     background-color:  #adee59;
-    width: 32%;
+    width: 35%;
     height: 75px;
     border: 15px inset #383d86;
     float: left;
+    position: relative;
+    top: 30px
 }
 footer{
     text-align: center;
     color: white;
     background-color: black;
     height: 20px;
+}
+.article{
+    paddinG: 4%;
 }
 a:hover{
     color: rgb(255, 0, 0);
@@ -87,8 +98,29 @@ a{
     text-decoration: none;
 }
 .h3-fix{
-    text-decoration:underline;
+    position: relative;
+    color: darkblue;
+
 }
-.article{
-    paddinG: 4%
+.h3-fix::after{
+    content: '';
+    position: absolute;
+    width: 240px;
+    height: 2px;
+    background-color: darkblue;
+    top: 22px;
+    left: 0px;
+    /* coloca una linea debajo del texto*/
+}
+
+.text-anim:hover{
+    font-size: 15px;
+}
+.text-anim{
+    font-size: 13px;
+}
+.Links-derecha{
+    float: left;
+    width: 26%;
+    padding: 2%;
 }
